@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter and Search</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header container">
+        <img src="Logo.png" alt="logo">
+        <ul class="menu">
+            <li>DISCOVER</li>
+            <li>CREATORS</li>
+            <li>SELL</li>
+            <li>STATS</li>
+        </ul>
+        <input type="text" id="searchProduct" placeholder="Search product">
+        <button class="button">connect wallet</button>
+    </header>
+    <div class="main">
+        <div class="nfts container">
+            <h1>Discover NFTs</h1>
+
+            <div class="filters">
+                <button data-category="all">All</button>
+                <button data-category="white">White</button>
+                <button data-category="orange">Orange</button>
+                <button data-category="blue">Blue</button>
+                <button data-category="pink">Pink</button>
+                <select id="sortOrder">
+                    <option value="">Sort by</option>
+                    <option value="lowest">Lowest Price</option>
+                    <option value="highest">Highest Price</option>
+                </select>
+            </div>
+
+            <div class="products">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
