@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+.menu_full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:83px;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .mobile-menu.active {
+    right: 0;
+  }
+
+  .mobile-menu .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .mobile-menu .menu li {
+    font-size: 18px;
+    color: #2d2d2d;
+    cursor: pointer;
+  }
+  .mobile-menu input#searchProductMobile {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .mobile-menu .button {
+    padding: 12px 0;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  @media (max-width: 1270px) {
+    .menu_full {
+      display: none;
+    }
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px !important;
+}
+input {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #c2c3cb;
+  padding: 18px 22px;
+  background-color: #ededed;
+  border-radius: 10px;
+  text-align: center;
+  border: 0;
+}
+.button {
+  padding: 16px 24px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  border: 0;
+}
+.button:hover {
+  color: #000;
+  background: #fff;
+  border: 2px solid #000;
+}
+ul {
+  display: flex;
+  gap: 53px;
+}
+ul li {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #606060;
+  cursor: pointer;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.nfts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.container > h1 {
+  font-size: 50px;
+  color: #2d2d2d;
+  text-shadow: #cccc 1px 1px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filters > button {
+  font-size: 17px;
+  padding: 5px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.filters > input,
+select {
+  padding: 5px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+  outline: none;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.bid {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #94a3b8;
+}
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.text {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.product img {
+  margin-bottom: 10px;
+}
+footer {
+  background: #000;
+  color: #fff;
+  padding: 24px 0;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__hr {
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  opacity: 0.5;
+  margin: 24px auto;
+}
+.footer__bottom {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 147%;
+  color: #999;
+}
+.burger {
+    display: none;
+}
+
+@media (max-width: 1270px) {
+    .menu_full {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .header {
+        padding: 16px !important;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+@media (max-width: 670px) {
+    .footer__top .menu {
+        display: none;
+    }
+
+}
